@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Projects</title>
+  <link rel="icon" href="../../image/electron-icon.E8mrXtZM.svg" type="svg">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="grid">
+
+  <p class="first-para">Rock Paper Scissors </p>
+  <div class="select-move">
+  </div>
+  <button onclick="
+        playerMove('Rock');
+      "> <img src="../../image/rock-emoji.png" alt="" class="sel-move">
+  </button>
+  <button onclick="
+      playerMove('Paper');
+      "> <img src="../../image/paper-emoji.png" alt="" class="sel-move">
+  </button>
+  <button onclick="
+          playerMove('Scissor');
+      "> <img src="../../image/scissor-emoji.png" alt="" class="sel-move">
+  </button>
+  
+
+  <p class="js-move"></p>
+  <p class="js-status"></p>
+  <p class="js-score"></p>
+
+  <button class="js-reset" onclick="
+        score.win = 0;
+        score.Lose = 0;
+        score.Tie = 0;
+        localStorage.removeItem('score')
+        scoreUpdate();
+      ">
+    Reset Score
+  </button>
+
+  <script src="script.js">
+    
+  </script>
+</body>
+
+</html>
