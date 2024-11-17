@@ -42,8 +42,8 @@ let result = '';
       else if (result === 'Tie')
         score.Tie++;
 
-      document.querySelector('.js-status').innerHTML = `You <img src="../../image/${Move}-emoji.png" alt="" width="60px">
-      <img src="../../image/${computerMove}-emoji.png" alt="" width="60px"> Computer`;
+      document.querySelector('.js-status').innerHTML = `You <img src="../Images/${Move}-emoji.png" alt="" width="60px">
+      <img src="../Images/${computerMove}-emoji.png" alt="" width="60px"> Computer`;
       document.querySelector('.js-move').innerHTML = result;
       scoreUpdate();
       localStorage.setItem('score', JSON.stringify(score));
