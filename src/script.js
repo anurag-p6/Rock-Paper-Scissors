@@ -7,6 +7,23 @@ let result = '';
 
     scoreUpdate();
 
+   let isAutoPlay = false ;
+   let intervalId;
+  function autoPlay(){
+    if(!isAutoPlay) {
+      intervalId = setInterval(function() {
+        const move = pickcomputerMove();
+        playerMove(move);
+      },1000);
+
+      isAutoPlay = true ;
+    } else {
+      clearInterval(intervalId);
+      isAutoPlay = false;
+    }
+    
+  }
+
     function playerMove(Move) {
       let computerMove = pickcomputerMove();
 

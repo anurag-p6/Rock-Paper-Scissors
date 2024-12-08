@@ -9,11 +9,10 @@
   <link rel="stylesheet" href="main.css">
 </head>
 
-<body class="grid">
-
+<body>
+  <div calss="main-div">
   <p class="first-para">Rock Paper Scissors </p>
-  <div class="select-move">
-  </div>
+  
   <button onclick="
         playerMove('Rock');
       "> <img src="../Images/Rock-emoji.png" alt="" class="sel-move">
@@ -26,12 +25,11 @@
           playerMove('Scissor');
       "> <img src="../Images/Scissor-emoji.png" alt="" class="sel-move">
   </button>
-  
 
   <p class="js-move"></p>
   <p class="js-status"></p>
   <p class="js-score"></p>
-
+  
   <button class="js-reset" onclick="
         score.win = 0;
         score.Lose = 0;
@@ -41,6 +39,10 @@
       ">
     Reset Score
   </button>
+
+  <button class="auto-play-button" onclick="autoPlay();">Auto Play</button>
+
+</div>
 
   <script src="script.js">
     
