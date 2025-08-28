@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DOM Projects</title>
-  <link rel="icon" href="../../image/electron-icon.E8mrXtZM.svg" type="svg">
+  <title>Rock Paper Scissors</title>
+  <link rel="icon" href="Images/Rock-emoji.png" type="svg">
   <link rel="stylesheet" href="main.css">
 </head>
 
@@ -13,8 +13,8 @@
   <div class="whole-site">
     <div class="header">
         <div onclick="playMusic()" class="music-icon">
-          <img height="40" width="40" src="../Images/icons8-audio-16.png" alt="music-image">
-          <audio id="bg-music" src="../Music/Winning_speech.mp3"></audio>
+          <img height="40" width="40" src="Images/icons8-audio-16.png" alt="music-image">
+          <audio id="bg-music" src="Music/Winning_speech.mp3"></audio>
         </div>
     </div>
     <div class="main-div">
@@ -23,15 +23,15 @@
 
         <button onclick="
         playerMove('Rock'), playSound();
-      "> <img src="../Images/Rock-emoji.png" alt="" class="sel-move">
+      "> <img src="/Images/Rock-emoji.png" alt="" class="sel-move">
         </button>
         <button onclick="
       playerMove('Paper'), playSound();
-      "> <img src="../Images/Paper-emoji.png" alt="" class="sel-move">
+      "> <img src="/Images/Paper-emoji.png" alt="" class="sel-move">
         </button>
         <button onclick="
           playerMove('Scissor');
-      "> <img src="../Images/Scissor-emoji.png" alt="" class="sel-move">
+      "> <img src="/Images/Scissor-emoji.png" alt="" class="sel-move">
         </button>
 
         <p class="js-move"></p>
