@@ -10,42 +10,52 @@
 </head>
 
 <body>
-  <div calss="main-div">
-  <p class="first-para">Rock Paper Scissors </p>
-  
-  <button onclick="
-        playerMove('Rock');
+  <div class="whole-site">
+    <div class="header">
+        <div onclick="playMusic()" class="music-icon">
+          <img height="40" width="40" src="../Images/icons8-audio-16.png" alt="music-image">
+          <audio id="bg-music" src="../Music/Winning_speech.mp3"></audio>
+        </div>
+    </div>
+    <div class="main-div">
+      <div class="content">
+        <p class="first-para">Rock Paper Scissors </p>
+
+        <button onclick="
+        playerMove('Rock'), playSound();
       "> <img src="../Images/Rock-emoji.png" alt="" class="sel-move">
-  </button>
-  <button onclick="
-      playerMove('Paper');
+        </button>
+        <button onclick="
+      playerMove('Paper'), playSound();
       "> <img src="../Images/Paper-emoji.png" alt="" class="sel-move">
-  </button>
-  <button onclick="
+        </button>
+        <button onclick="
           playerMove('Scissor');
       "> <img src="../Images/Scissor-emoji.png" alt="" class="sel-move">
-  </button>
+        </button>
 
-  <p class="js-move"></p>
-  <p class="js-status"></p>
-  <p class="js-score"></p>
-  
-  <button class="js-reset" onclick="
+        <p class="js-move"></p>
+        <p class="js-status"></p>
+        <p class="js-score"></p>
+
+        <button class="js-reset" onclick="
         score.win = 0;
         score.Lose = 0;
         score.Tie = 0;
         localStorage.removeItem('score')
         scoreUpdate();
       ">
-    Reset Score
-  </button>
+          Reset Score
+        </button>
 
-  <button class="auto-play-button" onclick="autoPlay();">Auto Play</button>
+        <button class="auto-play-button" onclick="autoPlay();">Auto Play</button>
 
-</div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js">
-    
+
   </script>
 </body>
 
